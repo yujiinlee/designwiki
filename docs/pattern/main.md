@@ -15,14 +15,28 @@ nav_order: 2
 {:toc}
 
 ---
+## 국내 커머스
 
-출처: 2022.01.13 
-[2022.01 회원가입 디자인/사용성 개선](https://wiki.woowa.in/pages/viewpage.action?pageId=302285938)
+💡 클릭하면 세로로 긴 풀페이지를 보실 수 있습니다.
 
+<!-- 긴 이미지용 div 박스 -->
+
+<div style="display: inline-block;">
 
 {% for file in site.static_files -%}
     {% if file.path contains "/assets/images/page/03_main" %}
         {%- assign file_path = file.path | absolute_url -%}
-[![]({{ file_path }})]({{ file_path }}){% endif %}{%- endfor %}
+    <div class="thumbnail-wrapper">
+        <a href="{{ file_path }}">
+            <img class="longimg" src="{{ file_path }}">
+        </a>
+    </div>
+{% endif %}{%- endfor %}
+
+</div>
+
+<!-- 긴 이미지용 div 박스 -->
+
+-----
 
 ## 푸드 딜리버리
