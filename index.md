@@ -1,102 +1,42 @@
 ---
 layout: default
-title: Home
+title: 홈
 nav_order: 1
-description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+description: "우아한 형제들의 디자인 레퍼런스 위키입니다."
 permalink: /
 ---
 
-# Focus on writing good documentation.
-{: .fs-9 }
+# 디자인 레퍼런스 페이지 소개
+{: .fs-8 }
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
-{: .fs-6 .fw-300 }
+디자인옵스팀 사용자경험관리 파트는, UX라이팅에 대한 고민과 함께, 사용자 리서치 결과, 타사 사례 등 디자인에 인사이트를 주고, 의사결정에  참고가 되는 정량, 정성 UX 데이터를 지속적으로 수집하고, 축적하고, 관리하고, 쉽게 조회할 수 있도록 하는 일을 담당합니다
+{: .fs-5 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/just-the-docs/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
-
----
-
-## Getting started
-
-### Dependencies
-
-Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special plugins and can run on GitHub Pages' standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
-
-### Quick start: Use as a GitHub Pages remote theme
-
-1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
-
-```yaml
-remote_theme: just-the-docs/just-the-docs
-```
-
-<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
-
-### Local installation: Use the gem-based theme
-
-1. Install the Ruby Gem
-  ```bash
-  $ gem install just-the-docs
-  ```
-  ```yaml
-  # .. or add it to your your Jekyll site’s Gemfile
-  gem "just-the-docs"
-  ```
-
-2. Add Just the Docs to your Jekyll site’s `_config.yml`
-  ```yaml
-  theme: "just-the-docs"
-  ```
-
-3. _Optional:_ Initialize search data (creates `search-data.json`)
-  ```bash
-  $ bundle exec just-the-docs rake search:init
-  ```
-
-3. Run you local Jekyll server
-  ```bash
-  $ jekyll serve
-  ```
-  ```bash
-  # .. or if you're using a Gemfile (bundler)
-  $ bundle exec jekyll serve
-  ```
-
-4. Point your web browser to [http://localhost:4000](http://localhost:4000)
-
-If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
-
-### Configure Just the Docs
-
-- [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
+[위키 바로가기](https://wiki.woowa.in/pages/viewpage.action?pageId=337249101){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [문의하기](https://wiki.woowa.in/pages/viewpage.action?pageId=337249101){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
-## About the project
+## 목표
 
-Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Patrick Marsceill](http://patrickmarsceill.com).
+- 빠르게 변화하는 UX/UI 트렌드를 지속적으로 조사하고, 우리 서비스에 맞게 녹여내기
+- 디자이너들이 디자인에 더 집중하고, 업무 효율을 높일 수 있도록, 참고가 될만한 사례를 조사/수집해두기
+- UX리서치 등을 통해 타사 사례와 우리 서비스를 객관적으로 비교하고 평가하기
 
-### License
+### 단기
 
-Just the Docs is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
+디자인 레퍼런스 아카이빙, 쉽고 빠르게 찾아볼 수 있는 라이브러리 구축 (ref. www.pinterest.co.kr, www.behance.net)
+어떻게(어떤 기준으로) 분류할 것인가
+어디에 수집할 것인가
 
-### Contributing
+### 중기
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/just-the-docs/just-the-docs#contributing).
+레퍼런스에 대한 코멘트 남기기, 인사이트 정리 하기
 
-#### Thank you to the contributors of Just the Docs!
+### 장기
 
-<ul class="list-style-none">
-{% for contributor in site.github.contributors %}
-  <li class="d-inline-block mr-1">
-     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"/></a>
-  </li>
-{% endfor %}
-</ul>
+레퍼런스 조사를 하면서 추가 유저 반응 조사가 필요하다고 생각될 경우, 유저 리서치로 확장
 
-### Code of Conduct
+## 담당
 
-Just the Docs is committed to fostering a welcoming community.
+정혜원님, 이유진님
 
-[View our Code of Conduct](https://github.com/just-the-docs/just-the-docs/tree/main/CODE_OF_CONDUCT.md) on our GitHub repository.

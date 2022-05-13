@@ -15,7 +15,7 @@
     margin: 0;
 
     @include mq(md) {
-      @include fs-3;
+      @include fs-4;
     }
 
     .nav-list-link {
@@ -33,6 +33,8 @@
       }
 
       @include mq(md) {
+        padding-top: $sp-2;
+        padding-bottom: $sp-2;
         min-height: $nav-list-item-height;
         line-height: #{$nav-list-item-height - 2 * $sp-1};
         @if $nav-list-expander-right {
@@ -197,7 +199,7 @@
 
 .breadcrumb-nav-list-item {
   display: table-cell;
-  @include fs-2;
+  @include fs-3;
 
   &::before {
     display: none;
