@@ -77,7 +77,20 @@ function initSearch() {
       
       lunr.tokenizer.separator = {{ site.search.tokenizer_separator | default: site.search_tokenizer_separator | default: "/[\s\-/]+/" }}
 
+      function trimmerEnKo(token) {
+        return token
+          .replace(/^[^\w가-힣]+/, '')
+          .replace(/[^\w가-힣]+$/, '');
+      };
+      
+      
       var index = lunr(function(){
+        this.pipeline.reset();
+      this.pipeline.add(
+        trimmerEnKo,
+        lunr.stopWordFilter,
+        lunr.stemmer
+        );
         this.ref('id');
         this.field('title', { boost: 200 });
         this.field('content', { boost: 2 });
